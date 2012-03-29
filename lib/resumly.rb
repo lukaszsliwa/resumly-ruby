@@ -17,4 +17,7 @@ module Resumly
 
   autoload :Base, 'base'
   autoload :Profile, 'profile'
+  autoload :Candidate, 'candidate'
+
+  autoload :ProfileCandidates, 'profile_candidates'
 end

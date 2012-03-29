@@ -23,5 +23,9 @@ module Resumly
         end
       end
     end
+
+    def candidates
+      @candidates ||= ProfileCandidates.new(self)
+    end
   end
 end

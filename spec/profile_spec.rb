@@ -53,4 +53,13 @@ describe Resumly::Profile do
       }
     end
   end
+
+  describe "#candidates" do
+    context "gets profile candidates" do
+      subject {
+        Resumly::Profile.new(:subdomain => 'jobs', :name => 'Resumly Jobs')
+      }
+      its(:candidates) { should be_kind_of(Resumly::ProfileCandidates) }
+    end
+  end
 end
