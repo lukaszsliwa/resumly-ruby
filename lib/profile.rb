@@ -27,5 +27,9 @@ module Resumly
     def candidates
       @candidates ||= ProfileCandidates.new(self)
     end
+
+    def offers
+      @offers ||= ProfileOffers.new(self)
+    end
   end
 end

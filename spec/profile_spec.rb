@@ -59,7 +59,20 @@ describe Resumly::Profile do
       subject {
         Resumly::Profile.new(:subdomain => 'jobs', :name => 'Resumly Jobs')
       }
-      its(:candidates) { should be_kind_of(Resumly::ProfileCandidates) }
+      its(:candidates) {
+        should be_kind_of(Resumly::ProfileCandidates)
+      }
+    end
+  end
+
+  describe "#offers" do
+    context "gets offers" do
+      subject {
+        Resumly::Profile.new(:subdomain => 'jobs', :name => 'Resumly Jobs')
+      }
+      its(:offers) {
+        should be_kind_of(Resumly::ProfileOffers)
+      }
     end
   end
 end
