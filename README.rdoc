@@ -4,16 +4,16 @@ Resumly ruby gem provides simple API to get data from your Resumly account. To r
 
 == Configure
 
-```
-require 'rubygems'
-require 'resumly'
 
-Resumly.configure do |resumly|
-  resumly.token   = 'YOUR_TOKEN_HERE'
-  resumly.host    = 'api.resumly.com'
-  resumly.version = 'v1'
-end
-```
+    require 'rubygems'
+    require 'resumly'
+
+    Resumly.configure do |resumly|
+      resumly.token   = 'YOUR_TOKEN_HERE'
+      resumly.host    = 'api.resumly.com'
+      resumly.version = 'v1'
+    end
+
 
 == Contributing to resumly-ruby
  
